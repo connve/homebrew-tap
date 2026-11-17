@@ -1,0 +1,36 @@
+class Flowgen < Formula
+  desc "Agentic data activation platform with human-in-the-loop"
+  homepage "https://connve.com/docs/flowgen"
+  version "__VERSION__"
+  license "MPL-2.0"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-darwin-arm64-#{version}.tar.gz"
+      sha256 "__SHA_DARWIN_ARM64__"
+    end
+    on_intel do
+      url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-darwin-amd64-#{version}.tar.gz"
+      sha256 "__SHA_DARWIN_AMD64__"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-linux-arm64-#{version}.tar.gz"
+      sha256 "__SHA_LINUX_ARM64__"
+    end
+    on_intel do
+      url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-linux-amd64-#{version}.tar.gz"
+      sha256 "__SHA_LINUX_AMD64__"
+    end
+  end
+
+  def install
+    bin.install "flowgen"
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/flowgen --version")
+  end
+end
