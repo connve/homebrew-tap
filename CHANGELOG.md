@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-18
+
+### Changed
+
+- The `flowgen` formula's description is "Composable data activation platform".
+
 ## 2026-11-17
 
 ### Added
