@@ -2,28 +2,28 @@
 class Flowgen < Formula
   desc "Composable data activation platform"
   homepage "https://connve.com/docs/flowgen"
-  version "0.159.0"
+  version "0.160.0"
   license "MPL-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-darwin-arm64-#{version}.tar.gz"
-      sha256 "40d4c0be421d3c9cef3a209228a2ce74ff61790cd887a01828a098e05d2a66c0"
+      sha256 "23ba7d6440ba471b3faf24fe46f7052e8597bb9007850759b0e3848d4c004d4f"
     end
     on_intel do
       url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-darwin-amd64-#{version}.tar.gz"
-      sha256 "aa43e28b39b8f993c26300d548c46d94163a5af91eb772dc3610e0fb0106b8a4"
+      sha256 "31be84d7f2b2325ece1a61a469e597c6799906281fc187fa04a1e03591038d24"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-linux-arm64-#{version}.tar.gz"
-      sha256 "79e8c15fb90bb1c79862bf1c0604082672b91894ffa5018b1674dd25dd15003a"
+      sha256 "c7466bd12c75835665fba23d5529b2fe836b0b3351c20776a7f0845f255e9fe3"
     end
     on_intel do
       url "https://github.com/connve/flowgen/releases/download/v#{version}/flowgen-linux-amd64-#{version}.tar.gz"
-      sha256 "1ad721896f14cdba35f1636ed6d26f0bcd2cc543771d990d7070600918219d5e"
+      sha256 "2a14ddd829df5e622c74b35b951c76ea600489765926059dd586bcac05896f6d"
     end
   end
 
